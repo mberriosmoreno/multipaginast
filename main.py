@@ -2,18 +2,18 @@ import streamlit as st
 
 # --- CONFIGURACIÓN DE PÁGINAS ---
 about_page = st.Page(
-    "views/about_me.py",
+    "Pages/about_me.py",
     title="Acerca de Mí",
     icon=":material/account_circle:",
     default=True,
 )
 project_1_page = st.Page(
-    "views/sales_dashboard.py",
+    "Pages/sales_dashboard.py",
     title="Tablero de Ventas",
     icon=":material/bar_chart:",
 )
 project_2_page = st.Page(
-    "views/chatbot.py",
+    "Pages/chatbot.py",
     title="Chat Bot",
     icon=":material/smart_toy:",
 )
