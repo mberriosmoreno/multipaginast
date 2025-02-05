@@ -39,7 +39,7 @@ page = st.sidebar.selectbox(
 
 # --- ELEMENTOS COMPARTIDOS EN TODAS LAS PÁGINAS ---
 try:
-    st.image("assets/logo.png", use_column_width=True)  # Logo compartido
+    st.image("assets/logo.png",  use_container_width=True)  # Logo compartido
 except Exception:
     st.warning("No se pudo cargar el logo. Asegúrate de que el archivo 'logo.png' esté en la carpeta 'assets/'.")
 
