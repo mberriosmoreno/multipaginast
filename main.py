@@ -1,7 +1,6 @@
 import streamlit as st
 
 # --- CONFIGURACIÓN DE PÁGINAS ---
-# Definir las páginas de la aplicación como funciones
 def about_me():
     st.title("Acerca de Mí")
     st.write("""
@@ -33,20 +32,17 @@ def chatbot():
         st.write(f"El bot responde: ¡Hola! Has escrito '{user_input}'.")
 
 # --- MENÚ DE NAVEGACIÓN ---
-# Crear un menú desplegable en la barra lateral para seleccionar la página
 page = st.sidebar.selectbox(
     "Selecciona una página",
     ["Acerca de Mí", "Tablero de Datos", "Chat Bot"]
 )
 
 # --- ELEMENTOS COMPARTIDOS EN TODAS LAS PÁGINAS ---
-# Agregar un logo en la parte superior (asegúrate de que esta imagen exista en la carpeta "assets/")
 try:
     st.image("assets/logo.png", use_column_width=True)  # Logo compartido
 except Exception:
     st.warning("No se pudo cargar el logo. Asegúrate de que el archivo 'logo.png' esté en la carpeta 'assets/'.")
 
-# Mensaje en la barra lateral
 st.sidebar.markdown("Hecho con ❤️ por [Tu Nombre](https://tupagina.com)")
 
 # --- RENDERIZAR LA PÁGINA SELECCIONADA ---
