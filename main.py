@@ -31,22 +31,25 @@ def chatbot():
     if user_input:
         st.write(f"El bot responde: ¡Hola! Has escrito '{user_input}'.")
 
-# --- MENÚ FIJO CON ICONOS EN LA BARRA LATERAL ---
+# --- MENÚ FIJO CON BOTONES ESTILIZADOS ---
 st.sidebar.markdown("### 🌟 Menú Principal")
 
-# Botones para navegar entre páginas
-if st.sidebar.button("🏠 Acerca de Mí"):
-    st.session_state.page = "about_me"
-
-if st.sidebar.button("📊 Tablero de Datos"):
-    st.session_state.page = "dashboard"
-
-if st.sidebar.button("🤖 Chat Bot"):
-    st.session_state.page = "chatbot"
+# Contenedor para los botones
+with st.sidebar:
+    st.markdown("---")  # Línea divisoria para mejorar el diseño
+    if st.button("🏠 Acerca de Mí", use_container_width=True):
+        st.session_state.page = "about_me"
+    st.markdown("---")  # Línea divisoria
+    if st.button("📊 Tablero de Datos", use_container_width=True):
+        st.session_state.page = "dashboard"
+    st.markdown("---")  # Línea divisoria
+    if st.button("🤖 Chat Bot", use_container_width=True):
+        st.session_state.page = "chatbot"
+    st.markdown("---")  # Línea divisoria
 
 # --- ELEMENTOS COMPARTIDOS EN TODAS LAS PÁGINAS ---
 try:
-    st.image("assets/logo.png", width=300)  # Logo compartido
+    st.image("assets/logo.png", use_column_width=True)  # Logo compartido
 except Exception:
     st.warning("No se pudo cargar el logo. Asegúrate de que el archivo 'logo.png' esté en la carpeta 'assets/'.")
 
