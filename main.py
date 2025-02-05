@@ -27,7 +27,7 @@ pg = st.navigation(
 )
 
 # --- ELEMENTOS COMPARTIDOS EN TODAS LAS PÁGINAS ---
-st.logo("assets/codingisfun_logo.png")
+st.logo("assets/logo.png")
 st.sidebar.markdown("Hecho con ❤️ por [Sven](https://youtube.com/@codingisfun)")
 
 # --- EJECUTAR NAVEGACIÓN ---
