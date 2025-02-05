@@ -50,7 +50,7 @@ try:
 except Exception:
     st.warning("No se pudo cargar el logo. Asegúrate de que el archivo 'logo.png' esté en la carpeta 'assets/'.")
 
-st.sidebar.markdown("Hecho con ❤️ por [Tu Nombre](https://tupagina.com)")
+st.sidebar.markdown("Hecho con ❤️ por [Michael Berríos Moreno.](https://michaelberrios.carrd.co/#)")
 
 # --- RENDERIZAR LA PÁGINA SELECCIONADA ---
 if "page" not in st.session_state:
