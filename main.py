@@ -39,13 +39,11 @@ with st.sidebar:
     st.markdown("--")  # Línea divisoria para mejorar el diseño
     if st.button("🏠 Acerca de Mí", use_container_width=True):
         st.session_state.page = "about_me"
-    st.markdown("--")  # Línea divisoria
     if st.button("📊 Tablero de Datos", use_container_width=True):
         st.session_state.page = "dashboard"
-    st.markdown("--")  # Línea divisoria
     if st.button("🤖 Chat Bot", use_container_width=True):
         st.session_state.page = "chatbot"
-    st.markdown("--")  # Línea divisoria
+  
 
 # --- ELEMENTOS COMPARTIDOS EN TODAS LAS PÁGINAS ---
 try:
