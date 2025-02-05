@@ -36,7 +36,6 @@ st.sidebar.markdown("### 🌟 Menú Principal")
 
 # Contenedor para los botones
 with st.sidebar:
-    st.markdown("--")  # Línea divisoria para mejorar el diseño
     if st.button("🏠 Acerca de Mí", use_container_width=True):
         st.session_state.page = "about_me"
     if st.button("📊 Tablero de Datos", use_container_width=True):
